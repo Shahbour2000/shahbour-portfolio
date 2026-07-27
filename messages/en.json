@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "skills": "Skills",
+    "contact": "Contact",
+    "letsWorkTogether": "Let's Work Together"
+  },
+  "hero": {
+    "title": "Visual Designer crafting meaningful visual identities and brand experiences.",
+    "primaryCta": "View My Work",
+    "secondaryCta": "Contact Me"
+  },
+  "contact": {
+    "cta": "Let's create something meaningful together."
+  }
+}

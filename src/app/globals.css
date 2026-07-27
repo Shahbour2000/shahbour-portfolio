@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — single source of truth for Tailwind's generated
+ * utilities (bg-background, text-gold-dark, font-display, etc.).
+ * theme/*.ts files in src/theme/ export typed references to these same
+ * custom properties for use in JS (Motion variants, inline styles).
+ *
+ * Values come from DESIGN_SYSTEM.md. Contrast against background/surface
+ * was checked (WCAG 2.1): Primary Gold ~2.3:1 and Light Gold ~1.6:1 —
+ * both decorative-only, never text. Dark Gold ~4.8:1 — the one gold
+ * cleared for text/links. Enforced by naming, not just convention.
+ */
+@theme {
+  --color-background: #faf9f6;
+  --color-surface: #ffffff;
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+  --color-gold-primary: #c9a227;
+  --color-gold-light: #e5c76b;
+  --color-gold-dark: #8c6a12;
+  --color-border: #e8e2d6;
+
+  --font-display: var(--font-instrument-serif), Georgia, serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --radius-card: 0.75rem;
+  --radius-pill: 9999px;
+
+  --shadow-soft: 0 2px 12px rgba(17, 17, 17, 0.06);
+  --shadow-medium: 0 8px 30px rgba(17, 17, 17, 0.1);
+  --shadow-gold: 0 4px 24px rgba(201, 162, 39, 0.18);
+}
+
+/*
+ * Dark mode — reserved, intentionally not filled in.
+ * PROJECT_SPEC.md confirms the architecture must support Dark Mode from
+ * Phase 1, but explicitly defers building the dark UI and the toggle.
+ * Because every color above is a semantic token, enabling dark mode
+ * later is scoped to filling in this block — no component changes.
+ */
+[data-theme="dark"] {
+  /* --color-background: ...; */
+  /* --color-surface: ...; */
+  /* --color-text-primary: ...; */
+  /* --color-text-secondary: ...; */
+  /* --color-border: ...; */
+  /* Gold values likely stay close to as-is — gold reads correctly on both light and dark. */
+}
+
+/*
+ * RTL / Arabic typography swap. Components only ever use font-display /
+ * font-body (mapped to --font-display / --font-body) — never a family
+ * name directly — so this is the only place language-specific fonts are
+ * chosen. Markazi Text and Cairo were picked to sit in the same register
+ * as Instrument Serif and Manrope (editorial serif display + clean
+ * geometric-humanist body) rather than defaulting to a generic
+ * system-Arabic fallback, per the "must feel identical in quality"
+ * requirement.
+ */
+[dir="rtl"] {
+  --font-display: var(--font-markazi-text), Georgia, serif;
+  --font-body: var(--font-cairo), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-gold-light);
+  color: var(--color-text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-dark);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
