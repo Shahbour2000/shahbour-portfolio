@@ -10,9 +10,12 @@
     "closeMenu": "Close menu"
   },
   "hero": {
+    "eyebrow": "Available for freelance & full-time work",
     "title": "Visual Designer crafting meaningful visual identities and brand experiences.",
+    "keywords": ["Brand Identity", "Visual Design", "Social Media Design"],
     "primaryCta": "View My Work",
-    "secondaryCta": "Contact Me"
+    "secondaryCta": "Contact Me",
+    "portraitAlt": "Portrait of Abdallah Shahbour"
   },
   "contact": {
     "cta": "Let's create something meaningful together."
