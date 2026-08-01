@@ -5,7 +5,9 @@
     "work": "الأعمال",
     "skills": "المهارات",
     "contact": "تواصل",
-    "letsWorkTogether": "لنعمل معًا"
+    "letsWorkTogether": "لنعمل معًا",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة"
   },
   "hero": {
     "title": "مصمم بصري يصنع هويات بصرية وتجارب علامة تجارية ذات معنى.",
@@ -14,5 +16,11 @@
   },
   "contact": {
     "cta": "لنبدأ بصنع شيء ذي معنى معًا."
+  },
+  "layout": {
+    "switchToDark": "التبديل إلى الوضع الداكن",
+    "switchToLight": "التبديل إلى الوضع الفاتح",
+    "switchLanguage": "تغيير اللغة",
+    "copyright": "\u00a9 {year} {name}. جميع الحقوق محفوظة."
   }
 }

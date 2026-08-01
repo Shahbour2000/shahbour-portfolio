@@ -34,19 +34,26 @@
 }
 
 /*
- * Dark mode — reserved, intentionally not filled in.
- * PROJECT_SPEC.md confirms the architecture must support Dark Mode from
- * Phase 1, but explicitly defers building the dark UI and the toggle.
- * Because every color above is a semantic token, enabling dark mode
- * later is scoped to filling in this block — no component changes.
+ * Dark mode — filled in for Phase 3's toggle. Wasn't built in Phase 1 by
+ * design (PROJECT_SPEC.md deferred the toggle specifically, not the
+ * palette), so this is new, not a revisit of an old decision. Warm black
+ * rather than cold blue-black, mirroring light mode's warm cream rather
+ * than switching character. Same gold hex values as light mode — kept
+ * for brand consistency rather than inventing a second gold.
+ *
+ * Contrast checked (WCAG 2.1) against this background: text-primary
+ * 17.5:1, text-secondary 7.2:1, gold-primary 8.1:1, gold-light 11.8:1 —
+ * all comfortably pass as text here, unlike in light mode. gold-dark
+ * 3.9:1 — passes for large text/UI only, since it's the least luminant
+ * gold and this is already a dark surface; gold-primary or gold-light
+ * are the better choices for gold text specifically in dark mode.
  */
 [data-theme="dark"] {
-  /* --color-background: ...; */
-  /* --color-surface: ...; */
-  /* --color-text-primary: ...; */
-  /* --color-text-secondary: ...; */
-  /* --color-border: ...; */
-  /* Gold values likely stay close to as-is — gold reads correctly on both light and dark. */
+  --color-background: #0d0c0a;
+  --color-surface: #1c1a16;
+  --color-text-primary: #f5f2ec;
+  --color-text-secondary: #a39c8f;
+  --color-border: #2e2b25;
 }
 
 /*
@@ -72,6 +79,13 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-primary);
   font-family: var(--font-body);
+}
+
+/* Only active once React has mounted (see ThemeToggle) — first paint
+   already has the correct theme via the blocking script in <head>, so
+   nothing fades in on load, only on a deliberate toggle. */
+[data-theme-transition] {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 ::selection {

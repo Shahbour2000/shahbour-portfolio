@@ -12,6 +12,9 @@ import { notFound } from "next/navigation";
 import { MotionConfig } from "motion/react";
 import { routing } from "@/i18n/routing";
 import { site } from "@/content/site";
+import { ThemeScript } from "@/components/layout/ThemeScript";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
 // Latin type system (English)
@@ -109,9 +112,16 @@ export default async function LocaleLayout({
       dir={dir}
       className={`${instrumentSerif.variable} ${manrope.variable} ${geistMono.variable} ${markaziText.variable} ${cairo.variable}`}
     >
+      <head>
+        <ThemeScript />
+      </head>
       <body className="font-body antialiased">
         <NextIntlClientProvider messages={messages}>
-          <MotionConfig reducedMotion="user">{children}</MotionConfig>
+          <MotionConfig reducedMotion="user">
+            <Navbar />
+            {children}
+            <Footer />
+          </MotionConfig>
         </NextIntlClientProvider>
       </body>
     </html>

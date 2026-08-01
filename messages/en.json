@@ -5,7 +5,9 @@
     "work": "Work",
     "skills": "Skills",
     "contact": "Contact",
-    "letsWorkTogether": "Let's Work Together"
+    "letsWorkTogether": "Let's Work Together",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
     "title": "Visual Designer crafting meaningful visual identities and brand experiences.",
@@ -14,5 +16,11 @@
   },
   "contact": {
     "cta": "Let's create something meaningful together."
+  },
+  "layout": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode",
+    "switchLanguage": "Switch language",
+    "copyright": "\u00a9 {year} {name}. All rights reserved."
   }
 }
