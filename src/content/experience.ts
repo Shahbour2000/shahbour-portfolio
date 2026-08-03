@@ -1,26 +1,14 @@
 import type { Experience } from "@/types";
 
+/**
+ * Structural data only — organization/role/description/responsibilities
+ * moved to messages/*.json (see the "experience" namespace) since they're
+ * narrative content that needs real translation, not a locale-invariant
+ * string. Same pattern already used for Hero and About; experience.ts
+ * originally hardcoded English here, which didn't hold up once this
+ * section actually needed to render on the Arabic page.
+ */
 export const experience: Experience[] = [
-  {
-    id: "sirat",
-    organization: "Sirat Platform",
-    role: "Graphic Designer & Visual Identity Lead",
-    description:
-      "Led visual identity and brand experience design for the Sirat platform, spanning branding, social media design, and digital touchpoints.",
-    responsibilities: [
-      "Visual Identity",
-      "Branding",
-      "Social Media Design",
-      "Digital Experience",
-    ],
-    caseStudySlug: "sirat",
-  },
-  {
-    id: "ieee-cusb",
-    organization: "IEEE CUSB",
-    role: "Head of Multimedia Committee",
-    description:
-      "Directed graphic design and multimedia output for IEEE CUSB's student activities and events.",
-    responsibilities: ["Graphic Design", "Multimedia", "Student Activities"],
-  },
+  { id: "sirat", caseStudySlug: "sirat" },
+  { id: "ieee-cusb" },
 ];

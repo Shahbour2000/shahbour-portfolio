@@ -23,6 +23,24 @@
     "paragraph1": "I'm a visual designer who cares about how a brand feels before anyone reads a single word of it \u2014 the color, the type, the rhythm of a feed. My work spans identity systems, social media design, and the kind of digital detail that makes an experience feel considered rather than assembled.",
     "paragraph2": "An engineering background shaped how I think about the work \u2014 systems, structure, how pieces fit together \u2014 but design is where that thinking actually lives. Right now that means Sirat Platform and IEEE CUSB, and staying open to freelance and full-time work with teams who care about getting the details right."
   },
+  "experience": {
+    "eyebrow": "Experience",
+    "index": "02",
+    "caseStudyCta": "View Case Study",
+    "coverPlaceholder": "Cover image",
+    "sirat": {
+      "organization": "Sirat Platform",
+      "role": "Graphic Designer & Visual Identity Lead",
+      "description": "Led visual identity and brand experience design for the Sirat platform, spanning branding, social media design, and digital touchpoints.",
+      "responsibilities": ["Visual Identity", "Branding", "Social Media Design", "Digital Experience"]
+    },
+    "ieee-cusb": {
+      "organization": "IEEE CUSB",
+      "role": "Head of Multimedia Committee",
+      "description": "Directed graphic design and multimedia output for IEEE CUSB's student activities and events.",
+      "responsibilities": ["Graphic Design", "Multimedia", "Student Activities"]
+    }
+  },
   "contact": {
     "cta": "Let's create something meaningful together."
   },

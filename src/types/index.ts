@@ -39,10 +39,6 @@ export interface ToolItem {
 
 export interface Experience {
   id: string;
-  organization: string;
-  role: string;
-  description: string;
-  responsibilities: string[];
   coverImage?: string;
   /** Present only when a case study exists (currently just Sirat). */
   caseStudySlug?: string;
