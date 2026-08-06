@@ -10,6 +10,7 @@ export type SocialPlatform =
   | "discord"
   | "linkedin"
   | "behance"
+  | "dribbble"
   | "instagram"
   | "facebook"
   | "tiktok"
@@ -47,6 +48,8 @@ export interface Experience {
 export interface GalleryItem {
   id: string;
   title: string;
+  /** "Organization / Client" per CONTENT_STRUCTURE.md's modal info panel — optional since not every piece has one (e.g. a personal/self-initiated project). */
+  organization?: string;
   category: string;
   year: number;
   tools: string[];

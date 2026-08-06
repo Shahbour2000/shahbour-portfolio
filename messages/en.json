@@ -41,6 +41,14 @@
       "responsibilities": ["Graphic Design", "Multimedia", "Student Activities"]
     }
   },
+  "gallery": {
+    "eyebrow": "Selected Work",
+    "index": "03",
+    "empty": "Selected work is being prepared \u2014 check back soon.",
+    "close": "Close",
+    "year": "Year",
+    "tools": "Tools"
+  },
   "contact": {
     "cta": "Let's create something meaningful together."
   },
