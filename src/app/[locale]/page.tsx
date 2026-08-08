@@ -5,6 +5,7 @@ import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { SelectedWork } from "@/components/sections/SelectedWork";
 import { Skills } from "@/components/sections/Skills";
+import { Contact } from "@/components/sections/Contact";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -25,7 +26,7 @@ export default async function Home({
       <Experience />
       <SelectedWork />
       <Skills />
-      {/* Contact — Phase 9 */}
+      <Contact />
     </main>
   );
 }

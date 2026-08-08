@@ -71,6 +71,8 @@
     "nextjs": "Next.js"
   },
   "contact": {
+    "eyebrow": "تواصل",
+    "index": "٠٥",
     "cta": "لنبدأ بصنع شيء ذي معنى معًا."
   },
   "layout": {

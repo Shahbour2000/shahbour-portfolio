@@ -71,6 +71,8 @@
     "nextjs": "Next.js"
   },
   "contact": {
+    "eyebrow": "Contact",
+    "index": "05",
     "cta": "Let's create something meaningful together."
   },
   "layout": {
