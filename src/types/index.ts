@@ -28,7 +28,6 @@ export interface SocialLink {
 
 export interface Skill {
   id: string;
-  label: string;
 }
 
 export interface ToolItem {

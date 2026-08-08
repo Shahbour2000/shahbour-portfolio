@@ -49,6 +49,27 @@
     "year": "Year",
     "tools": "Tools"
   },
+  "skills": {
+    "eyebrow": "Skills",
+    "index": "04",
+    "skillsLabel": "Design Skills",
+    "toolsLabel": "Tools",
+    "labels": {
+      "brand-identity": "Brand Identity",
+      "typography": "Typography",
+      "visual-systems": "Visual Systems",
+      "art-direction": "Art Direction",
+      "social-media-design": "Social Media Design"
+    }
+  },
+  "tools": {
+    "photoshop": "Adobe Photoshop",
+    "illustrator": "Adobe Illustrator",
+    "premiere-pro": "Adobe Premiere Pro",
+    "canva": "Canva",
+    "figma": "Figma",
+    "nextjs": "Next.js"
+  },
   "contact": {
     "cta": "Let's create something meaningful together."
   },

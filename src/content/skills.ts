@@ -1,10 +1,16 @@
 import type { Skill } from "@/types";
 
-// Order and set per PROJECT_SPEC.md §7 (Skills → Design Skills).
+/**
+ * Structural only — labels moved to messages/*.json (skills.labels,
+ * keyed by id) since they're translatable concepts, not locale-invariant
+ * strings. Same reasoning as Experience in Phase 6. Order and set per
+ * PROJECT_SPEC.md §7. Adding a skill later is two edits, neither
+ * touching UI code: an entry here, matching keys in both message files.
+ */
 export const skills: Skill[] = [
-  { id: "brand-identity", label: "Brand Identity" },
-  { id: "typography", label: "Typography" },
-  { id: "visual-systems", label: "Visual Systems" },
-  { id: "art-direction", label: "Art Direction" },
-  { id: "social-media-design", label: "Social Media Design" },
+  { id: "brand-identity" },
+  { id: "typography" },
+  { id: "visual-systems" },
+  { id: "art-direction" },
+  { id: "social-media-design" },
 ];

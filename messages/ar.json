@@ -49,6 +49,27 @@
     "year": "السنة",
     "tools": "الأدوات"
   },
+  "skills": {
+    "eyebrow": "المهارات",
+    "index": "٠٤",
+    "skillsLabel": "المهارات التصميمية",
+    "toolsLabel": "الأدوات",
+    "labels": {
+      "brand-identity": "الهوية البصرية",
+      "typography": "التيبوغرافيا",
+      "visual-systems": "الأنظمة البصرية",
+      "art-direction": "الإخراج الفني",
+      "social-media-design": "تصميم السوشيال ميديا"
+    }
+  },
+  "tools": {
+    "photoshop": "Adobe Photoshop",
+    "illustrator": "Adobe Illustrator",
+    "premiere-pro": "Adobe Premiere Pro",
+    "canva": "Canva",
+    "figma": "Figma",
+    "nextjs": "Next.js"
+  },
   "contact": {
     "cta": "لنبدأ بصنع شيء ذي معنى معًا."
   },
